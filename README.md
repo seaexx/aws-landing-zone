@@ -41,6 +41,9 @@ knowledge.
 
 ## Structure
 
+## Structure
+
+```text
 terraform/
 ├── bootstrap/     # Remote state backend (S3 + DynamoDB)
 ├── org/           # AWS Organizations, OUs, SCPs
@@ -48,6 +51,7 @@ terraform/
 ├── iam/           # Roles and policies
 ├── logging/       # CloudTrail, CloudWatch
 └── workload/      # ECS Fargate, ALB, ECR
+```
 
 ## Prerequisites
 
