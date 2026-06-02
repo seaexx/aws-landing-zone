@@ -8,7 +8,7 @@ teams.
 
 Most AWS tutorials show you how to spin up a single EC2 instance or S3 bucket in
 one account. Real companies don't work that way. They use a multi-account structure
-where different environments are completely isolated from each other — a mistake in
+where different environments are completely isolated from each other, a mistake in
 development can never affect production.
 
 This project builds that structure from scratch using AWS Organizations, Terraform,
@@ -42,12 +42,12 @@ knowledge.
 ## Structure
 
 terraform/
-├── bootstrap/    # Remote state backend (S3 + DynamoDB)
-├── org/          # AWS Organizations, OUs, SCPs
-├── networking/   # VPC, subnets, routing
-├── iam/          # Roles and policies
-├── logging/      # CloudTrail, CloudWatch
-└── workload/     # ECS Fargate, ALB, ECR
+- **bootstrap/    # Remote state backend (S3 + DynamoDB)
+- **org/          # AWS Organizations, OUs, SCPs
+- **networking/   # VPC, subnets, routing
+- **iam/          # Roles and policies
+- **logging/      # CloudTrail, CloudWatch
+- **workload/     # ECS Fargate, ALB, ECR
 
 ## Prerequisites
 
