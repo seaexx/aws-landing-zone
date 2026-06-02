@@ -8,7 +8,7 @@ teams.
 
 Most AWS tutorials show you how to spin up a single EC2 instance or S3 bucket in
 one account. Real companies don't work that way. They use a multi-account structure
-where different environments are completely isolated from each other,git a mistake in
+where different environments are completely isolated from each other, a mistake in
 development can never affect production.
 
 This project builds that structure from scratch using AWS Organizations, Terraform,
